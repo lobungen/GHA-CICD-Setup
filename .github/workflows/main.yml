@@ -10,25 +10,31 @@ on:
 
 # Jobs to carry out
 jobs:
-  test:
-    # Operating system to run job on
+  render-deploy:
     runs-on: ubuntu-latest
 
-    # Steps in job
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
     steps:
-      # Get code from repo
       - name: Checkout code
-        uses: actions/checkout@v1
 
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v4
+
+      - name: CI and CD using Node.js ${{ matrix.node-version }}
+
+        uses: actions/setup-node@v4
+
         with:
-          node-version: 20.x
+          node-version: ${{ matrix.node-version }}
 
-      # Install dependencies
-      - name: 🧰 Install Deps
-        run: npm install
-        
-      # Run lint
-      - name: Run Lint
-        run: npm run lint
+          cache: "npm"
+
+      - name: install dependencies
+
+        run: npm ci
+
+      - name: Render Deploy Action
+
+        run: curl "$deploy_url"

@@ -4,24 +4,21 @@ The application is built using the MERN stack, which includes MongoDB, Express.j
 
 ## Table of Contents
 
-- [Technolodies Used](#technologies-used)
+- [Technologies Used](#technologies-used)
 - [Video Submission](#video-submission)
-- [Github Repo](#github-repo)
+- [GitHub Repository](#github-repository)
+- [GitHub Gist](#github-gist)
+- [Render Deployment](#render-deployment)
 
 ## Technologies Used
 
-- Node.js/Express.js
-- MongoDB database
-- MERN Stack with React front end
-- JavaScript
-- Cypress
-- Render
-
-## Video Submission
-
-[Video demo - Google Drive Link](https://drive.google.com/file/d/1xnE_0134fwjy9iN69yMPKXzDU_QWRfpg/view)
-
-[Video demo - Screencastify Link](https://app.screencastify.com/v3/watch/u67rljNWUlOEh3UaIWOB)
+- **Node.js** / **Express.js** – Backend API
+- **MongoDB** – NoSQL database
+- **React** – Frontend UI
+- **JavaScript** – Core programming language
+- **Cypress** – End-to-end testing
+- **GitHub Actions** – CI/CD pipelines
+- **Render** – App deployment platform
 
 ## Github Repo
 
@@ -29,8 +26,8 @@ The application is built using the MERN stack, which includes MongoDB, Express.j
 
 ## Gitub Gist
 
-[Github Gist]()
+[Github Gist](https://gist.github.com/lobungen/5b11a3b62375d4d7710e0d10e3beeca7)
 
 ## Render Deployment
 
-[GHA-CICD-Setup Render Deployment](https://gha-cicd-setup.onrender.com)
+[Live Demo on Render](https://gha-cicd-setup.onrender.com)

@@ -5,7 +5,6 @@ The application is built using the MERN stack, which includes MongoDB, Express.j
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
-- [Video Submission](#video-submission)
 - [GitHub Repository](#github-repository)
 - [GitHub Gist](#github-gist)
 - [Render Deployment](#render-deployment)
